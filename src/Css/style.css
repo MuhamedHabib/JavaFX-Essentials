@@ -1,0 +1,54 @@
+.parent{
+    -fx-background-color: transparent;
+}
+.pane{
+    -fx-background-color: #333;
+}
+.btn-slide{
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-text-fill: whitesmoke;
+}
+.btn-slide:hover{
+    -fx-border-width: 2px;
+    -fx-opacity: .7;
+}
+.white-pane{
+    -fx-background-color: #fff;
+}
+.tf-box{
+    -fx-background-color: transparent;
+    -fx-border-color: #dedee4;
+    -fx-border-width: 0px 0px 1px 0px; 
+}
+.tf{
+    -fx-background-color: transparent;
+    
+}
+.pink-btn{
+    -fx-background-color: #f78c7b;
+    -fx-background-radius: 5px;
+    -fx-text-fill: #fff;
+}
+#buttons:selected{
+    -fx-background-color: green;
+}
+.btn{
+    -fx-text-fill: #fff;
+}
+.btn:hover{
+    -fx-background-color: #00c853;
+    -fx-text-fill: #fff;
+    -fx-text-alignment: center;
+}
+.btn:focused{
+    -fx-background-color: rgba(0,0,0,0.3);
+    -fx-text-fill: #fff;
+}
+.focused{
+    -fx-background-color: rgba(0,0,0,0.3);
+    -fx-text-fill: #fff;
+}

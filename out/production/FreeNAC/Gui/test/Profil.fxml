@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ProfilController">
+   <children>
+      <AnchorPane prefHeight="746.0" prefWidth="732.0">
+         <children>
+            <AnchorPane layoutX="10.0" layoutY="-1.0" prefHeight="602.0" prefWidth="723.0" />
+            <Pane layoutY="-1.0" prefHeight="747.0" prefWidth="732.0" style="-fx-background-color: #696969;">
+               <children>
+                  <ImageView fitHeight="69.0" fitWidth="109.0" layoutX="202.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/icon.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="287.0" layoutY="36.0" prefHeight="23.0" prefWidth="173.0" text="FreeNAC" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="292.0" layoutY="59.0" prefHeight="23.0" prefWidth="162.0" text="you're secure as you think" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI" size="12.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnUpdatePWD" layoutX="230.0" layoutY="585.0" mnemonicParsing="false" onAction="#passwordUpdate" prefHeight="23.0" prefWidth="278.0" style="-fx-background-color: #000000;" styleClass="button2" text="Update pwd">
+                     <textFill>
+                        <RadialGradient centerX="0.4772727272727273" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop color="#a87f71" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                     <font>
+                        <Font name="Cambria" size="19.0" />
+                     </font></Button>
+                  <Label fx:id="lblStatus" layoutX="236.0" layoutY="551.0" prefHeight="17.0" prefWidth="266.0" text="Status :" />
+                  <Button fx:id="btnSupp" layoutX="255.0" layoutY="637.0" mnemonicParsing="false" onMouseClicked="#Supprimer" prefHeight="25.0" prefWidth="227.0" style="-fx-background-color: #000000;" styleClass="button2" text="Deactivate">
+                     <textFill>
+                        <RadialGradient centerX="0.4772727272727273" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop color="#a87f71" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                     <font>
+                        <Font name="Cambria" size="19.0" />
+                     </font></Button>
+                  <TextField fx:id="txtMdp" layoutX="227.0" layoutY="436.0" prefHeight="31.0" prefWidth="278.0" promptText="Mot de Passe" />
+                  <TextField fx:id="txtMdp1" layoutX="230.0" layoutY="486.0" prefHeight="31.0" prefWidth="278.0" promptText="Mot de Passe de Nouveau" />
+                  <Button fx:id="logout" layoutX="315.0" layoutY="694.0" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: #000000;" text="Déconnexion">
+                     <textFill>
+                        <RadialGradient centerX="0.4772727272727273" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop color="#a87f71" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                     <font>
+                        <Font name="Cambria" size="19.0" />
+                     </font></Button>
+                  <TextField fx:id="lblnom" layoutX="155.0" layoutY="312.0" promptText="nom" />
+                  <TextField fx:id="lblprenom" layoutX="409.0" layoutY="312.0" promptText="prenom" />
+                  <Button fx:id="btnUpdateNom" layoutX="227.0" layoutY="374.0" mnemonicParsing="false" onAction="#updateNom" prefHeight="23.0" prefWidth="278.0" style="-fx-background-color: #000000;" styleClass="button2" text="Update Nom">
+                     <textFill>
+                        <RadialGradient centerX="0.4772727272727273" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop color="#a87f71" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                     <font>
+                        <Font name="Cambria" size="19.0" />
+                     </font></Button>
+                  <ImageView fx:id="imageV" fitHeight="150.0" fitWidth="200.0" layoutX="300.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

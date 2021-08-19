@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="Ajouter" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="581.0" prefWidth="1091.0" style="-fx-background-color: #D3D3D3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.reclamationController">
+<children>
+      <TabPane layoutX="-5.0" layoutY="-1.0" prefHeight="581.0" prefWidth="1097.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Ajouter une réclamation">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="552.0" prefWidth="1073.0">
+                     <children>
+                        <Pane layoutX="25.0" prefHeight="554.0" prefWidth="314.0" style="-fx-background-color: #C0C0C0;" />
+
+                      <Button fx:id="Buttonid" contentDisplay="BOTTOM" layoutX="645.0" layoutY="498.0" mnemonicParsing="false" onAction="#AjouterRec" prefHeight="30.0" prefWidth="220.0" style="-fx-background-color: #8B0000;" text="Ajouter" textFill="WHITE">
+                          <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="573.0" prefHeight="51.0" prefWidth="252.0" text="Reclamation">
+                           <font>
+                              <Font size="28.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Annuler" cancelButton="true" layoutX="413.0" layoutY="499.0" mnemonicParsing="false" onAction="#annuler" prefHeight="29.0" prefWidth="221.0" style="-fx-background-color: #8B0000;" text="Annuler" textFill="WHITE">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Button>
+                        <ComboBox fx:id="type" layoutX="402.0" layoutY="207.0" prefHeight="25.0" prefWidth="157.0" promptText="Sélectionner un type" />
+                         <Button fx:id="image" layoutX="714.0" layoutY="148.0" onAction="#image" prefHeight="26.0" prefWidth="147.0" style="-fx-background-color: #BDBDBD;" text="Importer une image " />
+
+                         <ImageView fx:id="screenshotView" fitHeight="146.0" fitWidth="155.0" layoutX="707.0" layoutY="195.0" pickOnBounds="true" smooth="false" />
+                        <TextField fx:id="object" layoutX="402.0" layoutY="276.0" prefHeight="37.0" prefWidth="213.0" />
+                        <TextField fx:id="NomTXFLD" layoutX="134.0" layoutY="146.0" prefHeight="31.0" prefWidth="166.0" />
+                        <TextField fx:id="PrenomTXFLD" layoutX="134.0" layoutY="204.0" prefHeight="32.0" prefWidth="166.0" />
+                        <TextField fx:id="EmailTXFLD" layoutX="135.0" layoutY="265.0" prefHeight="33.0" prefWidth="165.0" />
+                        <TextField fx:id="TelTXFLD" layoutX="135.0" layoutY="325.0" prefHeight="32.0" prefWidth="166.0" />
+                        <Label layoutX="63.0" layoutY="153.0" prefHeight="17.0" prefWidth="59.0" text="Nom" />
+                        <Label layoutX="63.0" layoutY="212.0" text="Prénom" />
+                        <Label layoutX="67.0" layoutY="273.0" prefHeight="17.0" prefWidth="72.0" text="Email" />
+                        <Label layoutX="64.0" layoutY="333.0" prefHeight="17.0" prefWidth="78.0" text="Télephone" />
+                        <Label fx:id="alerte" layoutX="481.0" layoutY="462.0" prefHeight="30.0" prefWidth="358.0" textFill="#b22424">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Label>
+                        <TextArea fx:id="tfréclamation" layoutX="403.0" layoutY="333.0" prefHeight="121.0" prefWidth="463.0" />
+
+                     </children></AnchorPane>
+            </content>
+               <graphic>
+               </graphic>
+          </Tab>
+          <Tab text="Consulter mes réclamations">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="552.0" prefWidth="876.0">
+                     <children>
+                      <TableView fx:id="Reclamations" layoutX="14.0" layoutY="90.0" prefHeight="290.0" prefWidth="1065.0" />
+                        <TextField fx:id="recherche" layoutX="939.0" layoutY="59.0" prefHeight="31.0" prefWidth="137.0" promptText="Search.." />
+                        <Label layoutX="425.0" layoutY="14.0" prefHeight="25.0" prefWidth="216.0" text="Liste des réclamations">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Accordion layoutX="299.0" layoutY="354.0" />
+                        <Accordion layoutX="312.0" layoutY="354.0" />
+                      <TitledPane expanded="false" layoutX="218.0" layoutY="392.0" prefHeight="130.0" prefWidth="587.0" text="Consulter les mises à jour de mes réclamations">
+                           <content>
+                              <TableView fx:id="notif" prefHeight="111.0" prefWidth="605.0" />
+                           </content>
+                      </TitledPane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+</children>
+
+</Pane>

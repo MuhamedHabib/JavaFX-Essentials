@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vbox" alignment="CENTER_LEFT" prefHeight="623.0" prefWidth="422.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SignUpController">
+   <children>
+      <Label alignment="CENTER" layoutX="25.0" layoutY="115.0" prefHeight="49.0" prefWidth="422.0" style="-fx-background-color: #000000;" text="User Sign Up" textFill="#eeedee">
+         <font>
+            <Font size="29.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="15.0" top="-35.0" />
+         </VBox.margin>
+      </Label>
+      <Label prefHeight="44.0" prefWidth="110.0" text="Sign Up" textFill="#bf5858">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="20.0" />
+         </VBox.margin>
+      </Label>
+      <HBox layoutX="20.0" layoutY="175.0" prefHeight="40.0" prefWidth="200.0" styleClass="tf-box">
+         <children>
+            <FontAwesomeIconView fill="#0d86b5" glyphName="USER" size="30">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </FontAwesomeIconView>
+            <TextField fx:id="txt_nom" prefHeight="39.0" prefWidth="354.0" promptText="Nom" />
+         </children>
+         <padding>
+            <Insets left="23.0" />
+         </padding>
+      </HBox>
+      <HBox layoutX="25.0" layoutY="252.0" prefHeight="40.0" prefWidth="200.0" styleClass="tf-box">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/icons8_User_96px.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txt_prenom" prefHeight="39.0" prefWidth="358.0" promptText="Prenom" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" left="10.0" top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox layoutX="25.0" layoutY="191.0" prefHeight="40.0" prefWidth="320.0" styleClass="tf-box">
+         <children>
+            <FontAwesomeIconView fill="#24d71b" glyphName="PHONE" size="30">
+               <HBox.margin>
+                  <Insets top="3.0" />
+               </HBox.margin>
+            </FontAwesomeIconView>
+            <TextField fx:id="txt_numgsm" prefHeight="39.0" prefWidth="368.0" promptText="phone" />
+         </children>
+         <VBox.margin>
+            <Insets left="23.0" right="15.0" top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="432.0" prefHeight="40.0" prefWidth="200.0" styleClass="tf-box">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/icons8_User_96px.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txt_username" prefHeight="39.0" prefWidth="357.0" promptText="Username" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" left="10.0" top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="40.0" prefWidth="200.0" styleClass="tf-box">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/icons8_Password_1_96px.png" />
+               </image>
+            </ImageView>
+            <PasswordField fx:id="txt_password" prefHeight="39.0" prefWidth="364.0" promptText="Password" />
+         </children>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox layoutX="25.0" layoutY="182.0" prefHeight="40.0" prefWidth="200.0" styleClass="tf-box">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/icons8_Email_96px.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txt_email" prefHeight="39.0" prefWidth="364.0" promptText="Email" />
+         </children>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox layoutX="25.0" layoutY="461.0" prefHeight="40.0" prefWidth="200.0" styleClass="tf-box">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/icons8_Email_96px.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txt_status" prefHeight="39.0" prefWidth="364.0" promptText="Email" text="admin or membre " />
+         </children>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <Label fx:id="lblStatus" alignment="CENTER" prefHeight="23.0" prefWidth="354.0">
+         <VBox.margin>
+            <Insets left="50.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+      <HBox alignment="CENTER_RIGHT" layoutX="25.0" layoutY="272.0" prefHeight="47.0" prefWidth="392.0">
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="20.0" />
+         </VBox.margin>
+         <children>
+            <JFXButton fx:id="btn_signup" onAction="#signUp" prefHeight="47.0" prefWidth="85.0" styleClass="pink-btn" text="Sign In">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+   <stylesheets>
+      <URL value="@../../Css/style.css" />
+      <URL value="@../../Css/style.css" />
+   </stylesheets>
+</VBox>

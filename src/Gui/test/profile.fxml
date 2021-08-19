@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="310.0" style="-fx-background-color: #2c344b;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.test.Controller">
+   <children>
+      <AnchorPane layoutY="419.0" prefHeight="48.0" prefWidth="310.0" style="-fx-background-color: #43bb73;">
+         <children>
+            <Label layoutX="133.0" layoutY="11.0" onMouseClicked="#back" prefHeight="17.0" prefWidth="45.0" text="Log23in">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="48.0" prefWidth="310.0" style="-fx-background-color: #2e354f;">
+         <children>
+            <Label layoutX="131.0" layoutY="14.0" text="Multibit" textFill="#8c90b3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Circle fill="#fa4771" layoutX="16.0" layoutY="24.0" radius="5.0" stroke="#fa4771" strokeType="INSIDE" />
+            <Circle fill="#ffc965" layoutX="30.0" layoutY="24.0" radius="5.0" stroke="#ffc965" strokeType="INSIDE" />
+            <Circle fill="#42cf9b" layoutX="45.0" layoutY="24.0" radius="5.0" stroke="#42cf9b" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="19.0" layoutY="222.0" prefHeight="50.0" prefWidth="270.0" style="-fx-border-color: #8c90b3; -fx-border-radius: 2;">
+         <children>
+            <Label layoutX="76.0" layoutY="16.0" text="hharddy" textFill="#8c90b3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="20.0" layoutY="298.0" prefHeight="50.0" prefWidth="270.0" style="-fx-border-color: #8c90b3; -fx-border-radius: 2;">
+         <children>
+            <Label layoutX="14.0" layoutY="17.0" text="********" textFill="#8c90b3">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="202.0" layoutY="15.0" text="Restore?" textFill="#8c90b3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="89.0" layoutY="377.0" text="or Create new profile" textFill="#8c90b3">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="107.0" fitWidth="140.0" layoutX="102.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/icon.png" />
+         </image>
+      </ImageView>
+      <Circle fill="DODGERBLUE" layoutX="154.0" layoutY="155.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fitHeight="73.0" fitWidth="80.0" layoutX="114.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/pic.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="310.0" style="-fx-background-color: #2c344b;">
+         <children>
+            <AnchorPane layoutY="419.0" onMouseClicked="#back" prefHeight="48.0" prefWidth="310.0" style="-fx-background-color: #43bb73;">
+               <children>
+                  <Label fx:id="login" layoutX="133.0" layoutY="11.0" prefHeight="17.0" prefWidth="45.0" text="Lo0gin" textFill="#fefefe">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="48.0" prefWidth="310.0" style="-fx-background-color: #2e354f;">
+               <children>
+                  <Label layoutX="131.0" layoutY="14.0" text="Multibit" textFill="#8c90b3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Circle fx:id="close" fill="#fa4771" layoutX="16.0" layoutY="24.0" onMouseClicked="#closeclick" radius="5.0" stroke="#fa4771" strokeType="INSIDE" />
+                  <Circle fx:id="min" fill="#ffc965" layoutX="30.0" layoutY="24.0" onMouseClicked="#minclick" radius="5.0" stroke="#ffc965" strokeType="INSIDE" />
+                  <Circle fill="#42cf9b" layoutX="45.0" layoutY="24.0" radius="5.0" stroke="#42cf9b" strokeType="INSIDE" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="19.0" layoutY="222.0" prefHeight="50.0" prefWidth="270.0" style="-fx-border-color: #8c90b3; -fx-border-radius: 2;">
+               <children>
+                  <Label layoutX="76.0" layoutY="16.0" text="hharddy" textFill="#8c90b3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Circle fx:id="pic" fill="DODGERBLUE" layoutX="29.0" layoutY="26.0" radius="19.0" stroke="#8c90b3" strokeType="INSIDE" strokeWidth="0.5" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="20.0" layoutY="298.0" prefHeight="50.0" prefWidth="270.0" style="-fx-border-color: #8c90b3; -fx-border-radius: 2;">
+               <children>
+                  <Label layoutX="14.0" layoutY="17.0" text="********" textFill="#8c90b3">
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="202.0" layoutY="15.0" text="Restore?" textFill="#8c90b3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="89.0" layoutY="377.0" text="or Create new profile" textFill="#8c90b3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="ic" fitHeight="107.0" fitWidth="140.0" layoutX="102.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/icon.png" />
+               </image>
+            </ImageView>
+           
+      
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

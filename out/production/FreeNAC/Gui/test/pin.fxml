@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="310.0" style="-fx-background-color: #2c344b; -fx-border-radius: 6px;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.test.SecController">
+   <children>
+      <AnchorPane layoutY="419.0" prefHeight="48.0" prefWidth="310.0" style="-fx-background-color: #43bb73;">
+         <children>
+            <Label layoutX="133.0" layoutY="11.0" prefHeight="17.0" prefWidth="45.0" text="Login" textFill="#fefefe">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="48.0" prefWidth="310.0" style="-fx-background-color: #2e354f;">
+         <children>
+            <Label layoutX="131.0" layoutY="14.0" text="Multibit" textFill="#8c90b3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Circle fill="#fa4771" layoutX="16.0" layoutY="24.0" radius="5.0" stroke="#fa4771" strokeType="INSIDE" />
+            <Circle fill="#ffc965" layoutX="30.0" layoutY="24.0" radius="5.0" stroke="#ffc965" strokeType="INSIDE" />
+            <Circle fill="#42cf9b" layoutX="45.0" layoutY="24.0" radius="5.0" stroke="#42cf9b" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="19.0" layoutY="222.0" prefHeight="50.0" prefWidth="270.0" style="-fx-border-color: #8c90b3; -fx-border-radius: 2;">
+         <children>
+            <Label layoutX="76.0" layoutY="16.0" text="hharddy" textFill="#8c90b3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="20.0" layoutY="298.0" prefHeight="50.0" prefWidth="270.0" style="-fx-border-color: #8c90b3; -fx-border-radius: 2;">
+         <children>
+            <Label layoutX="14.0" layoutY="17.0" text="********" textFill="#8c90b3">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="202.0" layoutY="15.0" text="Restore?" textFill="#8c90b3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="89.0" layoutY="377.0" text="or Create new profile" textFill="#8c90b3">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+
+      <Circle fx:id="pro" fill="DODGERBLUE" layoutX="154.0" layoutY="155.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="310.0" style="-fx-background-color: #2c344b;">
+         <children>
+            <AnchorPane layoutY="419.0" prefHeight="48.0" prefWidth="310.0" style="-fx-background-color: #43bb73;">
+               <children>
+                  <Label layoutX="133.0" layoutY="11.0" onMouseClicked="#hey" prefHeight="17.0" prefWidth="45.0" text="Login" textFill="#fefefe">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="48.0" prefWidth="310.0" style="-fx-background-color: #2e354f;">
+               <children>
+                  <Label layoutX="131.0" layoutY="14.0" text="Multibit" textFill="#8c90b3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Circle fx:id="close" fill="#fa4771" layoutX="16.0" layoutY="24.0" onMouseClicked="#closeclick" radius="5.0" stroke="#fa4771" strokeType="INSIDE" />
+                  <Circle fx:id="min" fill="#ffc965" layoutX="30.0" layoutY="24.0" onMouseClicked="#minclick" radius="5.0" stroke="#ffc965" strokeType="INSIDE" />
+                  <Circle fill="#42cf9b" layoutX="45.0" layoutY="24.0" radius="5.0" stroke="#42cf9b" strokeType="INSIDE" />
+                  <ImageView fitHeight="20.0" fitWidth="28.0" layoutX="269.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/flash.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="62.0" layoutY="202.0" prefHeight="50.0" prefWidth="181.0" style="-fx-border-color: #8c90b3; -fx-border-radius: 2;">
+               <children>
+      
+                  <Label layoutX="66.0" layoutY="9.0" text="*******" textFill="#c7c9e2">
+      
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <Circle fx:id="pro2" fill="DODGERBLUE" layoutX="154.0" layoutY="113.0" radius="53.0" stroke="BLACK" strokeType="INSIDE" />
+            <GridPane gridLinesVisible="true" layoutX="65.0" layoutY="270.0" prefHeight="122.0" prefWidth="181.0" style="-fx-border-color: #8c90b3; -fx-border-radius: 2;">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <JFXButton focusTraversable="false" prefHeight="39.0" prefWidth="60.0" text="1" textFill="#8c90b3" />
+                  <JFXButton focusTraversable="false" prefHeight="39.0" prefWidth="60.0" text="4" textFill="#8c90b3" GridPane.rowIndex="1" />
+                  <JFXButton focusTraversable="false" prefHeight="39.0" prefWidth="60.0" text="2" textFill="#8c90b3" GridPane.columnIndex="1" />
+                  <JFXButton focusTraversable="false" prefHeight="39.0" prefWidth="60.0" text="5" textFill="#8c90b3" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <JFXButton focusTraversable="false" prefHeight="39.0" prefWidth="60.0" text="7" textFill="#8c90b3" GridPane.rowIndex="2" />
+                  <JFXButton focusTraversable="false" prefHeight="39.0" prefWidth="60.0" text="8" textFill="#8c90b3" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <JFXButton focusTraversable="false" prefHeight="39.0" prefWidth="60.0" text="3" textFill="#8c90b3" GridPane.columnIndex="2" />
+                  <JFXButton focusTraversable="false" prefHeight="39.0" prefWidth="60.0" text="6" textFill="#8c90b3" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <JFXButton focusTraversable="false" prefHeight="39.0" prefWidth="60.0" text="9" textFill="#8c90b3" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <JFXButton focusTraversable="false" prefHeight="39.0" prefWidth="60.0" text="#" textFill="#8c90b3" GridPane.rowIndex="3" />
+                  <JFXButton focusTraversable="false" prefHeight="39.0" prefWidth="60.0" text="0" textFill="#8c90b3" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <JFXButton focusTraversable="false" prefHeight="39.0" prefWidth="60.0" text="*" textFill="#8c90b3" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+            <Label layoutX="109.0" layoutY="175.0" text="Enter Your Pin" textFill="#c7c9e2">
+
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
